@@ -103,7 +103,7 @@ namespace TW.Vault.Controllers
             return Ok(new
             {
                 AuthToken = newUser.AuthToken,
-                Script = $"javascript:window.vaultToken='{newUser.AuthToken}';$.getScript('https://v.tylercamp.me/script/main.js')"
+                Script = $"javascript:window.vaultToken='{newUser.AuthToken}';$.getScript('https://{Configuration.Initialization.ServerHostname}/script/main.js')"
             });
         }
     }

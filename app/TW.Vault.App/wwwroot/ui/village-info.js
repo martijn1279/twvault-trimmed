@@ -172,9 +172,9 @@
 
         if (!troops) {
             if (isReturning) {
-                return 'https://tylercamp.me/tw/img/return_attack.png';
+                return '/graphic/command/return_attack.png';
             } else {
-                return 'https://tylercamp.me/tw/img/attack.png';
+                return '/graphic/command/attack.png';
             }
         }
 
@@ -192,7 +192,7 @@
             type = 'large';
         }
 
-        let img = `https://tylercamp.me/tw/img/`;
+        let img = `/graphic/command/`;
         if (isReturning) {
             img += 'return_attack_';
         }

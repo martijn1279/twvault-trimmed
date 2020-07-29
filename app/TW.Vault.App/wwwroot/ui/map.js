@@ -66,19 +66,19 @@
 
     tagIconTemplates[TAG_TYPES.WALL] = `
         <span class="marker" style="background-color:white">
-            <img src="https://tylercamp.me/tw/img/building_wall.png" style="width:18px;height:18px;">
+            <img src="/graphic/buildings/mid/wall3.png" style="width:18px;height:18px;">
         </span>
     `.trim();
 
     tagIconTemplates[TAG_TYPES.RETURNING_TROOPS] = `
         <span class="marker" style="background-color:white">
-            <img src="https://tylercamp.me/tw/img/return_attack_large.png" style="width:18px;height:18px;">
+            <img src="/graphic/command/return_attack_large.png" style="width:18px;height:18px;">
         </span>
     `.trim();
 
     tagIconTemplates[TAG_TYPES.WATCHTOWER] = `
         <span class="marker" style="background-color:white">
-            <img src="https://tylercamp.me/tw/img/building_watchtower.png" style="width:18px;height:18px;">
+            <img src="/graphic/buildings/mid/watchtower3.png" style="width:18px;height:18px;">
         </span>
     `.trim();
 
@@ -546,24 +546,24 @@
                         <tr style="background-color:#c1a264 !important">
                             <th>Vault</th>
                             <th>Seen at</th>
-                            <th><img src="https://tylercamp.me/tw/img/unit_spear.png" title="" alt="" class=""></th>
-                            <th><img src="https://tylercamp.me/tw/img/unit_sword.png" title="" alt="" class=""></th>
-                            <th><img src="https://tylercamp.me/tw/img/unit_axe.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_spear.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_sword.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_axe.png" title="" alt="" class=""></th>
                             ${ !lib.twstats.archersEnabled ? '' : `
-                                <th><img src="https://tylercamp.me/tw/img/unit_archer.png" title="" alt="" class=""></th>
+                                <th><img src="/graphic/unit/unit_archer.png" title="" alt="" class=""></th>
                             ` }
-                            <th><img src="https://tylercamp.me/tw/img/unit_spy.png" title="" alt="" class=""></th>
-                            <th><img src="https://tylercamp.me/tw/img/unit_light.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_spy.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_light.png" title="" alt="" class=""></th>
                             ${ !lib.twstats.archersEnabled ? '' : `
-                                <th><img src="https://tylercamp.me/tw/img/unit_marcher.png" title="" alt="" class=""></th>
+                                <th><img src="/graphic/unit/unit_marcher.png" title="" alt="" class=""></th>
                             ` }
-                            <th><img src="https://tylercamp.me/tw/img/unit_heavy.png" title="" alt="" class=""></th>
-                            <th><img src="https://tylercamp.me/tw/img/unit_ram.png" title="" alt="" class=""></th>
-                            <th><img src="https://tylercamp.me/tw/img/unit_catapult.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_heavy.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_ram.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_catapult.png" title="" alt="" class=""></th>
                             ${ !lib.twstats.paladinEnabled ? '' : `
-                                <th><img src="https://tylercamp.me/tw/img/unit_knight.png" title="" alt="" class=""></th>
+                                <th><img src="/graphic/unit/unit_knight.png" title="" alt="" class=""></th>
                             ` }
-                            <th><img src="https://tylercamp.me/tw/img/unit_snob.png" title="" alt="" class=""></th>
+                            <th><img src="/graphic/unit/unit_snob.png" title="" alt="" class=""></th>
                         </tr>
                         ${ !data.atHomeArmy ? '' : `
                         <tr>
@@ -626,12 +626,12 @@
                             <tr style="background-color:#c1a264 !important">
                                 <th>${lib.translate(lib.itlcodes.VAULT)}</th>
                                 <th>${lib.translate(lib.itlcodes.MAP_HOVER_SEEN_AT)}</th>
-                                <th><img src="https://tylercamp.me/tw/img/building_snob.png" title="Academy" alt="" class="bmain_list_img"></th>
-                                <th><img src="https://tylercamp.me/tw/img/building_smith.png" title="Smithy" alt="" class="bmain_list_img"></th>
-                                <th><img src="https://tylercamp.me/tw/img/building_farm.png" title="Farm" alt="" class="bmain_list_img"></th>
-                                <th><img src="https://tylercamp.me/tw/img/building_wall.png" title="Wall" alt="" class="bmain_list_img"></th>
+                                <th><img src="/graphic/buildings/mid/snob1.png" title="Academy" alt="" class="bmain_list_img"></th>
+                                <th><img src="/graphic/buildings/mid/smith3.png" title="Smithy" alt="" class="bmain_list_img"></th>
+                                <th><img src="/graphic/buildings/mid/farm3.png" title="Farm" alt="" class="bmain_list_img"></th>
+                                <th><img src="/graphic/buildings/mid/wall3.png" title="Wall" alt="" class="bmain_list_img"></th>
                                 ${ !lib.getCurrentServerSettings().watchtowerEnabled ? '' : `
-                                    <th><img src="https://tylercamp.me/tw/img/building_watchtower.png" title="Watchtower" alt="" class="bmain_list_img"></th>
+                                    <th><img src="/graphic/buildings/mid/watchtower3.png" title="Watchtower" alt="" class="bmain_list_img"></th>
                                 ` }
                             </tr>
                             <tr>

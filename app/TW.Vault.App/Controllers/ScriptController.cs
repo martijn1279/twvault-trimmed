@@ -281,7 +281,7 @@ namespace TW.Vault.Controllers
             if (originalUrl.Contains("?"))
                 originalUrl = originalUrl.Substring(0, originalUrl.IndexOf('?'));
 
-            String sourceUrlLink = $"//# sourceURL=https://v.tylercamp.me{originalUrl}";
+            String sourceUrlLink = $"//# sourceURL=https://${Configuration.Initialization.ServerHostname}{originalUrl}";
             scriptContents += ("\n" + sourceUrlLink);
 
             return scriptContents;

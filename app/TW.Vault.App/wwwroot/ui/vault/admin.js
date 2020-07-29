@@ -410,7 +410,6 @@ function makeAdminUsersInterface($container) {
         scriptString += `window.vaultToken="${user.key}";`;
 
         let scriptPath = lib.getScriptHost();
-        //let scriptPath = `https://v.tylercamp.me/script/main.js`;
         scriptString += `$.getScript("${scriptPath}");`;
 
         $('#key-script-container textarea').val(scriptString);
