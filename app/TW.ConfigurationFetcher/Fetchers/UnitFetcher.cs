@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TW.Vault.Scaffold;
+﻿using TW.Vault.Scaffold;
 
 namespace TW.ConfigurationFetcher.Fetcher
 {

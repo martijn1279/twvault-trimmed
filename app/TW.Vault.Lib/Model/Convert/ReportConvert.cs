@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using JSON = TW.Vault.Model.JSON;
-
-namespace TW.Vault.Model.Convert
+﻿namespace TW.Vault.Model.Convert
 {
     public static class ReportConvert
     {

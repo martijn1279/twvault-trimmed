@@ -110,7 +110,7 @@
                     $('#missing-command-uploads').html('');
                 }
             })
-            .error((xhr, b, c) => {
+            .fail((xhr, b, c) => {
                 if (xhr.status == 423) {
                     let reasons = null;
                     try {
@@ -328,7 +328,7 @@
                     getVaultTags();
                     toggleUploadButtons(true);
                 })
-                .error(() => {
+                .fail(() => {
                     alert(lib.messages.GENERIC_ERROR);
                 });
         });

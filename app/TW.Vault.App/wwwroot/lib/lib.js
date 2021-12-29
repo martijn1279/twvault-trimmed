@@ -116,7 +116,6 @@ var lib = (() => {
         twstats: twstats,
         twcalc: makeTwCalc(twstats),
         versioning: makeVersioningSetup(),
-        lzstr: makeLZStringApi(),
 
         //  Gets the current server date and time from the page
         getServerDateTime: function getServerDateTime($doc_) {
@@ -784,23 +783,7 @@ var lib = (() => {
 
             let serverBase = 'https://%V<HOSTNAME>';
 
-            //  Check if running from dev or from real server
-            let host = lib.getScriptHost();
-            let path = host.match(/%V<HOSTNAME>\/(.*)/)[1];
-
-            let pathParts = path.split('/');
-
-            //  Known server API base paths
-            let rootPaths = [
-                'api',
-                'script'
-            ];
-
-            var apiBasePath;
-            rootPaths.forEach((p) => path.contains(p) ? apiBasePath = path.substr(0, path.indexOf(p)) : null);
-
-            let result = `${serverBase.trim('/')}${apiBasePath ? '/' + apiBasePath.trim('/') : ''}/${url}`;
-            return result;
+            return `${serverBase.trim('/')}/${url}`;
         },
 
         // Make a URL relative to 'https://v.tylercamp.me/api' (or whatever the current base path is)
@@ -910,7 +893,7 @@ var lib = (() => {
 
         //  Gets the URL that the script was requested from
         getScriptHost: function getScriptHost() {
-            return 'https://%V<HOSTNAME>/script/main.js';
+            return 'https://media.innogames.com/com_DS_NL/scripts/XXXXXXXXX.js';
         },
 
         setScriptHost: function setScriptHost(scriptHost) {

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TW.Vault.Scaffold;
 
 namespace TW.Vault.Features.CommandClassification.FakeDetectionRules

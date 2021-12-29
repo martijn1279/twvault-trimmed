@@ -1,9 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Text.RegularExpressions;
 using TW.Vault.Scaffold;
 
 namespace TW.Vault.Migration

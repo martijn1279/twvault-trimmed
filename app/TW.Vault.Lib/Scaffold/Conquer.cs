@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace TW.Vault.Scaffold
+﻿namespace TW.Vault.Scaffold
 {
     public partial class Conquer
     {

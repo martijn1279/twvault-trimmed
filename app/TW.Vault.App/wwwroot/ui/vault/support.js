@@ -25,11 +25,11 @@ function makeVaultSupportInfoTab() {
             <hr>
             <h3>Script Support</h3>
             <p>
-                For any questions or bug reports, contact the lead developer, Tyler, on:
+                For any questions or bug reports, contact the lead developer, Martijn, on:
                 <ul style="display:inline-block;text-align:left">
-                    <li>Skype - astpgmr</li>
-                    <li>Discord - tcamps#9882</li>
-                    <li>External Forums - <a href="https://forum.tribalwars.net/index.php?members/tcamps.121640/">tcamps</a></li>
+                    <li>Skype - martijn1279</li>
+                    <li>Discord - martijn#1279</li>
+                    <li>External Forums - <a href="https://forum.tribalwars.nl/index.php?members/martijn1279.77881/">martijn1279</a></li>
                 </ul>
             </p>
             <hr>
@@ -40,14 +40,10 @@ function makeVaultSupportInfoTab() {
                 significant changes. We've never been denied approval.
             </p>
             <p>
-                For proof, I've created a post on the official Tribal Wars external forums for the Vault, and
-                asked a support staff to label it as an "Approved Script", to which they agreed.
-            </p>
-            <p>
-                <b>This script was last approved on 13/12/2018.</b> You can find details and more approval history at
+                You can find details at
                 the forum thread:
-                <a href="https://forum.tribalwars.net/index.php?threads/vault.282252/#post-7089474">
-                    https://forum.tribalwars.net/index.php?threads/vault.282252/#post-7089474
+                <a href="https://forum.tribalwars.nl/index.php?threads/vault.207241/">
+                    https://forum.tribalwars.nl/index.php?threads/vault.207241/
                 </a>
             </p>
             <hr>
@@ -384,7 +380,7 @@ function makeTranslationsTab() {
                             $container.find('option[value=' + currentEditingTranslation.id + ']').remove();
                             currentEditingTranslation = null;
                         })
-                        .error((xhr) => {
+                        .fail((xhr) => {
                             switch (xhr.status) {
                                 case 409: alert(lib.translate(lib.itlcodes.TRANSLATION_DELETE_DEFAULT, { _escaped: false })); break;
                                 default: alert(lib.messages.GENERIC_ERROR); break;
@@ -432,7 +428,7 @@ function makeTranslationsTab() {
                                 translations[currentEditingTranslation.languageId].updateWhere(t => t.id == currentEditingTranslation.id, t => t.name = currentEditingTranslation.name);
                             }
                         })
-                        .error((xhr) => {
+                        .fail((xhr) => {
                             $button.attr('disabled', false);
                             switch (xhr.status) {
                                 case 409: alert(lib.translate(lib.itlcodes.TRANSLATION_DUPLICATE, { _escaped: false, name: currentEditingTranslation.name })); break;

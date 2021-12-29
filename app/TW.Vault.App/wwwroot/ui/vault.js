@@ -3,7 +3,6 @@
     //# REQUIRE ui/vault/admin.js
     //# REQUIRE ui/vault/terms.js
     //# REQUIRE ui/vault/uploads.js
-    //# REQUIRE ui/vault/tools.js
     //# REQUIRE ui/vault/stats.js
     //# REQUIRE ui/vault/actions.js
     //# REQUIRE ui/vault/support.js
@@ -13,7 +12,6 @@
     let uploadsTab = makeUploadsTab();
     let adminTab = makeAdminTab();
     let termsTab = makeTermsTab();
-    let toolsTab = makeToolsTab();
     let statsTab = makeStatsTab();
     let actionsTab = makeActionsTab();
     let supportTab = makeVaultSupportTab();
@@ -24,7 +22,6 @@
         uploadsTab,
         statsTab,
         actionsTab,
-        toolsTab,
         adminTab,
         termsTab,
         supportTab
@@ -44,7 +41,7 @@
                     ${uilib.mkTabbedContainer(uploadsTab, tabs)}
 
                     <p style="font-size:12px">
-                        Vault server and script by: Tyler (tcamps/False Duke), Glen (vahtos/TheBossPig)
+                        Vault server and script by: Tyler (tcamps/False Duke), Glen (vahtos/TheBossPig) & Martijn (martijn1279)
                         <br>
                         Please report any bugs and feature requests to the maintainers.
                     </p>

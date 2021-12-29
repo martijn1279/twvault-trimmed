@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using TW.Vault.Model;
+﻿using TW.Vault.Model;
 using TW.Vault.Model.JSON;
 
 namespace TW.Vault.Features.Planning.Requirements.Modifiers

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -16,7 +15,6 @@ using TW.Vault.Model;
 using Native = TW.Vault.Model.Native;
 using TW.Vault.Features.Planning.Requirements;
 using TW.Vault.Features.Planning;
-using System.Net;
 using TW.Vault.Features.Simulation;
 using TW.Vault.Model.Native;
 using Microsoft.Extensions.DependencyInjection;
